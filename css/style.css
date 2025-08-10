@@ -510,6 +510,10 @@ textarea:focus,
   .navbar > .container-xxl {
     padding-inline: 0%;
   }
+
+  nav .search{
+  display: none;
+}
   nav ul li {
     padding: 7px;
   }
