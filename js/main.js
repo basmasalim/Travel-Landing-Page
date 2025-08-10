@@ -106,7 +106,7 @@ window.addEventListener('load', () => {
 
 setTimeout(() => {
   spinnerWrapperEL.style.display = 'none';
-}, 2500);
+}, 500);
 
 
   // type js
