@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&display=swap");
 /* ?=================================> Global */
 :root {
   --main-color: RGB(6, 166, 227);
-  --second-color:RGB(17, 37, 66);
+  --second-color: RGB(17, 37, 66);
   --white-color: #fff;
   --dark-color: #000;
   --section-padding: 80px;
@@ -32,7 +32,7 @@ body {
 .main-color {
   color: var(--main-color);
 }
-.second-color-bg{
+.second-color-bg {
   background-color: var(--second-color);
 }
 .w-fit {
@@ -45,17 +45,16 @@ body {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-h3{
-     font-family: "Reenie Beanie", cursive;
-     color: var(--main-color);
-     font-size: 2rem;
-     font-weight: bold;
+h3 {
+  font-family: "Reenie Beanie", cursive;
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.max-500{
+.max-500 {
   max-width: 900px;
 }
-
 
 /* &=================================> scrollbar */
 /* Width */
@@ -107,7 +106,7 @@ h3{
   width: 50px;
 }
 /* &=================================> Main Btn */
- a {
+a {
   background-color: var(--main-color);
   color: var(--white-color);
   padding: 15px 30px;
@@ -118,18 +117,24 @@ h3{
   transition: all 0.3s ease-in-out;
 }
 
- a:hover {
+a:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
- a:active {
+a:active {
   animation: pulse 0.3s ease-in-out;
 }
 /* &=================================> Navbar */
@@ -139,7 +144,7 @@ nav .navbar-brand {
   font-size: 1.1rem !important;
 }
 
-nav img{
+nav img {
   width: 70px;
 }
 nav ul {
@@ -147,9 +152,9 @@ nav ul {
   font-weight: 400;
 }
 
- .navbar .dot{
-    display: block;
-  }
+.navbar .dot {
+  display: block;
+}
 .navbar-toggler:focus {
   box-shadow: 0 0 0 transparent;
 }
@@ -181,20 +186,13 @@ nav {
   background: transparent;
   transition: background 0.3s ease-in-out;
 }
-nav .search{
+nav .search {
   border: 3px solid var(--second-color);
   color: var(--second-color);
 }
 /* &=================================> Header */
-#home {
-  background-image: 
-    url(../image/bgHome.jpg);
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-#home h1 {
+
+.home h1 {
   font-size: 5.5rem;
   font-weight: bold;
 }
@@ -213,6 +211,25 @@ nav .search{
 
 .icons li:hover {
   border: 1px solid #fff;
+}
+
+.carousel-caption {
+  right: 0%;
+  left: 8%;
+  top: 0%;
+  text-align: start;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: -40%;
+  width: 9%;
+  color: #fff;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    padding: 24px;
 }
 /* &=================================> Title */
 .main-title {
@@ -237,27 +254,27 @@ nav .search{
   color: #cccccc7f;
 }
 /* &=================================>  About*/
-#about .about-info{
- z-index: 1;
- top: 30%;
+#about .about-info {
+  z-index: 1;
+  top: 30%;
 }
-#about .about-info h2{
+#about .about-info h2 {
   color: var(--second-color);
   font-size: 3.5rem;
   font-weight: bold;
 }
 /* ^=================================>  blog*/
-#blog .blog-info span{
+#blog .blog-info span {
   font-weight: 400;
   color: var(--main-color);
   margin-right: 1.5rem;
   cursor: pointer;
 }
 #blog .blog-area p {
-   border-bottom: #0000001c 1px solid;
-   border-top: #0000001c 1px solid;
-   font-size: 1.2rem;
-   padding-block: 15px;
+  border-bottom: #0000001c 1px solid;
+  border-top: #0000001c 1px solid;
+  font-size: 1.2rem;
+  padding-block: 15px;
 }
 #blog .blog-read {
   width: 50px;
@@ -296,8 +313,8 @@ nav .search{
   margin: auto;
 }
 
-h4{
-     margin-block: 10px;
+h4 {
+  margin-block: 10px;
 }
 
 #services .item h4::after {
@@ -360,11 +377,12 @@ h4{
   cursor: pointer;
 }
 /* &=================================>  PRICE*/
- #price h4,#price h5{
+#price h4,
+#price h5 {
   color: var(--second-color);
   font-weight: bold;
- }
-#price h5{
+}
+#price h5 {
   font-size: 5rem !important;
 }
 #price .item .bottom-item li {
@@ -372,7 +390,6 @@ h4{
   padding: 15px;
   color: #fff;
 }
-
 
 /* ^=================================>  counter*/
 #counter {
@@ -417,7 +434,7 @@ h4{
   margin-top: -50px;
 }
 #clients .owl-carousel h5 {
-color: var(--main-color);
+  color: var(--main-color);
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -468,16 +485,15 @@ textarea:focus,
 #contact ul li {
   text-align: justify !important;
 }
-#contact ul li a{
+#contact ul li a {
   background-color: transparent;
-    color: var(--second-color);
-    padding: 0%;
-
+  color: var(--second-color);
+  padding: 0%;
 }
-#contact ul li a:hover{
+#contact ul li a:hover {
   transform: none;
 }
-#contact ul li  a:active {
+#contact ul li a:active {
   animation: none;
 }
 /* ?=================================>  COPYRIGHT */
@@ -492,7 +508,7 @@ textarea:focus,
   .navbar {
     padding: 0%;
   }
-  .navbar .dot{
+  .navbar .dot {
     display: none;
   }
   .navbar-nav .nav-link.active.active::after {
@@ -512,9 +528,9 @@ textarea:focus,
     padding-inline: 0%;
   }
 
-  nav .search{
-  display: none;
-}
+  nav .search {
+    display: none;
+  }
   nav ul li {
     padding: 7px;
   }
@@ -534,15 +550,15 @@ textarea:focus,
   .main-title .title h2 {
     font-size: 0rem;
   }
-  #blog{
+  #blog {
     margin-top: 90px;
   }
-  #contact .list{
+  #contact .list {
     order: -1;
   }
   #contact ul li {
-  text-align: center !important;
-}
+    text-align: center !important;
+  }
 }
 @media (max-width: 575.98px) {
   html {
@@ -550,12 +566,12 @@ textarea:focus,
   }
 }
 @media (max-width: 490.98px) {
-    #blog{
+  #blog {
     margin-top: 180px;
   }
 }
 @media (max-width: 390.98px) {
-    #blog{
+  #blog {
     margin-top: 220px;
   }
 }
