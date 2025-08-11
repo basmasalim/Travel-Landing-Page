@@ -471,6 +471,7 @@ textarea:focus,
 #contact ul li a{
   background-color: transparent;
     color: var(--second-color);
+    padding: 0%;
 
 }
 #contact ul li a:hover{
@@ -536,6 +537,12 @@ textarea:focus,
   #blog{
     margin-top: 90px;
   }
+  #contact .list{
+    order: -1;
+  }
+  #contact ul li {
+  text-align: center !important;
+}
 }
 @media (max-width: 575.98px) {
   html {
